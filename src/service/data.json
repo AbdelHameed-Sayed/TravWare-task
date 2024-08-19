@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "description": "A high-performance laptop core i711800H with 16GB RAM and 512GB SSD.",
+    "price": 60000
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "description": "A sleek smartphone with a powerful camera and long-lasting battery.",
+    "price": 7000
+  },
+  {
+    "id": 3,
+    "name": "Headphones",
+    "description": "Noise-cancelling over-ear headphones with superior sound quality.",
+    "price": 700
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch",
+    "description": "A stylish smartwatch with fitness tracking and mobile payment features.",
+    "price": 2500
+  },
+  {
+    "id": 5,
+    "name": "Tablet",
+    "description": "A lightweight tablet with a high-resolution display and powerful processor.",
+    "price": 10000
+  },
+  {
+    "id": 6,
+    "name": "Wireless Mouse",
+    "description": "A compact and ergonomic wireless mouse with long battery life.",
+    "price": 399
+  },
+  {
+    "id": 7,
+    "name": "Keyboard",
+    "description": "A mechanical keyboard with customizable backlight and responsive keys.",
+    "price": 2000
+  },
+  {
+    "id": 8,
+    "name": "Monitor",
+    "description": "A 27-inch monitor with 4K resolution and excellent color accuracy.",
+    "price": 12000
+  },
+  {
+    "id": 9,
+    "name": "External Hard Drive",
+    "description": "A 1TB  hard drive SSD NVME 2 with fast data transfer speed.",
+    "price": 3000
+  },
+  {
+    "id": 10,
+    "name": "Bluetooth Speaker",
+    "description": "A portable Bluetooth speaker with powerful sound and water resistance.",
+    "price": 600
+  }
+]
