@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TravWare Task - Simple Web Application
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is a simple web application built using **Next.js** with **Server Side Rendering (SSR)**. The application displays a list of items and includes several features such as searching, sorting, filtering, a shopping cart, and checkout functionality.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. Homepage
+- Displays a list of items fetched from a JSON file.
+- Each item in the list shows the following details:
+  - **Item name**
+  - **Item description**
+  - **Item price**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Search Functionality
+- A search bar allows users to search for items by name.
+- The list of items filters in real-time as the user types.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 3. Responsive Design
+- The application is responsive and works well on desktop and mobile devices.
 
-## Learn More
+### 4. Sorting
+- Users can sort the list of items by:
+  - **Default**
+  - **Name: A-Z**
+  - **Name: Z-A**
+  - **Price: High to Low**
+  - **Price: Low to High**
 
-To learn more about Next.js, take a look at the following resources:
+### 5. Filtering
+- Users can filter the list of items by **price range**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 6. Shopping Cart
+- Users can add items to a shopping cart.
+- Users can view their shopping cart and proceed to the Payment screen.
+- Users can remove items from a shopping cart.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Testing
 
-## Deploy on Vercel
+### Test Plan
+   - The Home page renders correctly.
+   - Items are displayed with correct information.
+   - Search bar filters items in real-time.
+   - Sorting by price, name, and Default works correctly.
+   - Filtering by price range works as expected.
+   - Shopping cart functionalities work as intended.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The application has been deployed via Vercel and can be accessed at the following link:
+
+[**[Vercel Deployment Link](https://trav-ware-task.vercel.app/)**]
+
