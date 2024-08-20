@@ -25,16 +25,18 @@ interface IProps {
 }
 
 const sortOptionsCases = {
+  default: 'default',
   'a-z': 'a-z',
   'z-a': 'z-a',
   priceHighToLow: 'priceHighToLow',
   priceLowToHigh: 'priceLowToHigh',
 };
 const sortOptions = [
-  {id: 1, title: 'Name: A-Z', value: sortOptionsCases['a-z']},
-  {id: 2, title: 'Name: Z-A', value: sortOptionsCases['z-a']},
-  {id: 3, title: 'Price: High to Low', value: sortOptionsCases.priceHighToLow},
-  {id: 4, title: 'Price: Low to High', value: sortOptionsCases.priceLowToHigh},
+  {id: 1, title: 'Default', value: sortOptionsCases['default']},
+  {id: 2, title: 'Name: A-Z', value: sortOptionsCases['a-z']},
+  {id: 3, title: 'Name: Z-A', value: sortOptionsCases['z-a']},
+  {id: 4, title: 'Price: High to Low', value: sortOptionsCases.priceHighToLow},
+  {id: 5, title: 'Price: Low to High', value: sortOptionsCases.priceLowToHigh},
 ];
 
 const HomeTemplate: FC<IProps> = ({items}) => {
@@ -85,10 +87,6 @@ const HomeTemplate: FC<IProps> = ({items}) => {
   const removeFromCartHandler = useCallback((item: TItem) => {
     setCart(prev => {
       const currentItem = prev[item.id];
-      if (!currentItem) {
-        return prev;
-      }
-
       const updatedCart = {...prev};
 
       if (currentItem.count <= 1) {
@@ -139,7 +137,9 @@ const HomeTemplate: FC<IProps> = ({items}) => {
           </AppButton>
 
           {showCart ? (
-            <div className="absolute w-56 bg-stone-100 -ms-2.5 max-h-64 overflow-scroll">
+            <div
+              className="absolute w-56 bg-stone-100 -ms-2.5 max-h-64 overflow-scroll"
+              data-testid="cartContainer">
               {Object.values(cart).length > 0 ? (
                 <div className="grid grid-cols-1 gap-6 text-center">
                   {Object.values(cart).map(item => (
@@ -154,6 +154,7 @@ const HomeTemplate: FC<IProps> = ({items}) => {
                     />
                   ))}
                   <Link
+                    data-testid="checkoutButton"
                     className="bg-blue-500 text-white text-sm px-1 py-2 rounded active:opacity-50 mx-5 mb-5 text-center"
                     href={'/payment'}>
                     Checkout (EGP{' '}

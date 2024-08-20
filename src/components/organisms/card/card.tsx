@@ -23,7 +23,9 @@ const Card: FC<IProps> = ({
 }) => {
   return (
     <div className="border rounded p-4">
-      <h2 className="text-xl font-bold mb-2">{name}</h2>
+      <h2 className="text-xl font-bold mb-2" data-testid="productName">
+        {name}
+      </h2>
       <p className="mb-2">{description}</p>
       <p className="mb-4 font-semibold">{price}</p>
 
